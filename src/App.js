@@ -2,6 +2,7 @@ import React ,{useState} from "react";
 import resdata from "./data/data.json";
 import User from "../src/component/User";
 // import Functions from "./handlers/Functions";
+import {showCountRepElem} from './handlers/questions'
 
 /*
 1. Import data from data folder and console.
@@ -12,10 +13,15 @@ import User from "../src/component/User";
 */
 // console.log(Data);
 const App = () => {
+  let arr = [1,1,1,1,1,1,22,2,3,2,2,3,4,5,6,7,8,9,10,10,10]
+  
+  showCountRepElem(arr);
   return (
     <div>
       <h1>Map Function</h1>
-      <User userData={resdata} name="Dhivya"/>
+      {/* <User userData={resdata}/> */}
+
+
     </div>
   );
 };
